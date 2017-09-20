@@ -1,0 +1,12 @@
+<table class='table table-striped'>
+    <tr>
+        <th ng-repeat='table in myGrid.gridSetting track by $index'>{{table.displayName}}</th>
+    </tr>
+    <tr ng-repeat = 'row in myGrid.rowData track by $index'>
+        <td ng-repeat = 'column in myGrid.gridSetting  track by $index'>{{row[column.columnName]}}
+              <button ng-repeat = 'btn in column.action track by $index' class = 'btn btn-info'
+              ng-click = 'myGrid.remove({id : row.id})'>{{btn.button}}</button>
+        </td>
+      
+    </tr>
+</table>

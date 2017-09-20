@@ -1,0 +1,22 @@
+<div class='container' ng-controller='formCtrl as form'>
+    <!--<my-grid grid-setting='form.addColumn' ng-if='!form.config'></my-grid>-->
+    <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+            <div class='horizontal'>
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>Form</div>
+                    <div class='panel-body'>
+                        <my-form config-form ='form.addForm' model = 'form.modelObj' ng-if='form.config'> </my-form>
+                        <my-grid grid-setting ='form.addColumn' row-data = 'form.addData' remove = 'form.remove(id)' ng-if='!form.config' ></my-grid>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='col-md-offset-8'>
+        <button type='submit' class='btn btn-primary'  ng-click='form.save()'>save</button>
+        <button type='submit' class='btn btn-primary'  ng-click='form.back()'>back</button>
+    </div>
+</div>

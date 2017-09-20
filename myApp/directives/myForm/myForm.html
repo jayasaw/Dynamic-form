@@ -1,0 +1,10 @@
+<div class='form-group' ng-repeat='form in myForm.configForm track by $index'>
+    <label class='control-label'>{{form.labelName}} </label>
+    <div>
+        <input type='{{form.type}}' name='{{form.fieldName}}' class='form-control' ng-model='myForm.model[form.fieldName]' />
+   
+    </div>
+    <!--<select ng-option  = 'state.code as state.description for state in stateOption'></select>-->
+        
+</div>
+

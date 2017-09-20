@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href = './lib/bootstrap/css/bootstrap.css' rel = 'stylesheet'></link>
+        <link href="style.css" rel="stylesheet"></link>
+    </head>
+    <body ng-app = 'app' ng-controller = 'homeCtrl as ctrl'>
+     <header>
+       <nav>
+           <div class = 'navbar navbar-default'>
+               <div class = 'container-fluid'>
+                    <div class = 'nabvar-header'>
+
+                    </div>
+               </div>
+           </div>
+       </nav>
+   </header>
+
+   <div ng-include = "'myApp/controllers/form/form.html'">
+   </div>
+   
+    <script src = './lib/angular/angular.js'></script>
+    <script src = './lib/jquery/jquery-3.2.1.js'></script>
+    <script src = './lib/bootstrap/js/bootstrap.js'></script>
+    <script src = 'index.js'></script>
+    <script src = './myApp/homeCtrl.js'></script>
+    <script src = './myApp/directives/myForm/myFormCtrl.js'></script>
+    <script src = './myApp/directives/myGrid/myGridCtrl.js'></script>
+    <script src = './myApp/services/dataService.js'></script>
+    <script src = './myApp/services/configService.js'></script>
+    <script src = './myApp/controllers/form/formCtrl.js'></script>
+    
+   
+    </body>
+</html>
